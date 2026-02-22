@@ -1,0 +1,60 @@
+:root{
+  --page-bg: #fed966; /* requested background */
+  --text: #1f2937; /* dark slate for contrast */
+  --muted: #374151;
+  --card-bg: #fefbe8;
+  --accent: #d94660;
+  --red-flag-bg: #fee2e2; --red-flag-text: #7f1d1d;
+  --orange-flag-bg: #fff7ed; --orange-flag-text: #7c2d12;
+  --green-flag-bg: #ecfdf5; --green-flag-text: #064e3b;
+}
+*{box-sizing:border-box}
+html,body,#app{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--page-bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,0.95);backdrop-filter:saturate(120%) blur(4px);border-bottom:1px solid rgba(0,0,0,0.06);display:flex;align-items:center;justify-content:space-between;padding:12px}
+header .left{display:flex;align-items:center;gap:12px}
+#menuToggle{background:#fff;border:1px solid rgba(0,0,0,0.08);padding:8px;border-radius:6px}
+header h1{font-size:14px;margin:0;font-weight:600}
+header .right{display:flex;align-items:center;gap:12px}
+a.btn-download{display:inline-block;padding:8px 12px;background:var(--muted);color:#fff;border-radius:8px;text-decoration:none;font-size:13px}
+a#facebookLink{color:#064e3b;text-decoration:underline;font-size:13px}
+
+.layout{display:flex;min-height:calc(100vh - 64px)}
+nav.sidebar{width:280px;position:fixed;left:0;top:64px;bottom:0;background:var(--card-bg);border-right:1px solid rgba(0,0,0,0.06);overflow:auto;transform:translateX(-100%);transition:transform .22s ease;padding:16px}
+nav.sidebar.open{transform:translateX(0)}
+@media(min-width:820px){nav.sidebar{transform:none;position:static;width:280px}}
+.contentsLabel{font-size:12px;color:var(--muted);text-transform:uppercase;margin-bottom:8px}
+#navList{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+#navList a{display:flex;align-items:center;gap:10px;padding:8px;border-radius:8px;color:var(--text);text-decoration:none}
+#navList a:hover{background:rgba(0,0,0,0.03)}
+
+main{flex:1;margin-left:0;padding:20px;min-height:400px}
+@media(min-width:820px){main{margin-left:280px}}
+.content-wrap{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+
+section.card{background:var(--card-bg);border-radius:10px;padding:18px;box-shadow:0 6px 18px rgba(16,24,40,0.06);border:1px solid rgba(0,0,0,0.04)}
+section.card h2{margin:0 0 8px 0;font-size:18px;color:var(--text);display:flex;align-items:center;gap:10px}
+/* show image-based flag icons (no shadow). Use pseudo-elements so images scale cleanly.
+  Images live in ./images/ (RedFlag.jpg, YellowFlag.jpg, GreenFlag.jpg) */
+.flag-pill{display:inline-block;position:relative;width:20px;height:20px;flex:0 0 20px;vertical-align:middle;font-size:0;line-height:0;overflow:hidden;text-indent:-9999px;margin-right:8px}
+.flag-pill::before{content:'';position:absolute;inset:0;border-radius:3px;background-repeat:no-repeat;background-position:center;background-size:contain;box-shadow:none !important;filter:none !important}
+.flag-red::before{background-image:url('./images/RedFlag.jpg')}
+.flag-orange::before{background-image:url('./images/YellowFlag.jpg')}
+.flag-green::before{background-image:url('./images/GreenFlag.jpg')}
+
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-top:12px}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+
+.help-btn{position:fixed;right:18px;top:74px;z-index:60;padding:10px 14px;border-radius:10px;color:#fff;background:linear-gradient(90deg,#ef4444,#f97316);box-shadow:0 8px 24px rgba(0,0,0,0.12);border:none}
+
+.callout-dontpanic{background:#fff3f0;border-left:4px solid #ef4444;padding:12px;border-radius:8px}
+
+footer{padding:14px;text-align:center;color:rgba(15,23,42,0.6)}
+
