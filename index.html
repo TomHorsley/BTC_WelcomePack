@@ -13,16 +13,6 @@
       contract_pdf: "./docs/August 2025 Contract of Adoption - Break The Chains for Dogs Bulgaria.pdf",
       facebookUrl: "https://www.facebook.com/groups/319985208569097",
       sections: [
-        {id: "welcome", title: "Welcome", flag: "", html: `
-          <div style="text-align:center">
-            <img src="./images/BTC Logo.png" alt="BTC Logo Image" style="max-width:25%;height:auto;border-radius:10px;margin-bottom:10px;" />
-            <h2>WELCOME TO THE BREAK THE CHAINS DOG RESCUING FAMILY.</h2>
-            <img src="./images/BTC_BG1.jpg" alt="BTC Welcome Image" style="max-width:100%;height:auto;border-radius:10px;margin-bottom:10px;" />
-            <p>We would like to thank you for rescuing your dog with us. All the necessary information can be found in this welcome pack.</p>
-            <p><strong>PLEASE READ IT</strong></p>
-            <p><strong>An extra word regarding your welcome pack:</strong> Please read this pack carefully - it prevents unnecessary prolonging of the dog's settling-in period.</p>
-          </div>
-        `},
         {id: "adopter-contract", title: "Adopter's Contract", image: "./images/contract_icon.jpg", flag: "red", html: `
           <p><strong>VERY IMPORTANT — Adopter's Contract</strong></p>
           <p>Please <strong>Print it, sign it, scan it and return to the email address provided</strong>: <a href="mailto:${'{{email}}'}">${'{{email}}'}</a></p>
@@ -166,7 +156,15 @@
 
         <div class="content-wrap" id="contentArea">
             <!-- dynamic content -->
+          <div class="welcome" style="text-align:center">
+            <img src="./images/BTC Logo.png" alt="BTC Logo Image" style="max-width:25%;height:auto;border-radius:10px;margin-bottom:10px;" />
+            <h2>WELCOME TO THE BREAK THE CHAINS DOG RESCUING FAMILY.</h2>
+            <img src="./images/BTC_BG1.jpg" alt="BTC Welcome Image" style="max-width:100%;height:auto;border-radius:10px;margin-bottom:10px;" />
+            <p>We would like to thank you for rescuing your dog with us. All the necessary information can be found in this welcome pack.</p>
+            <p><strong>PLEASE READ IT</strong></p>
+            <p><strong>An extra word regarding your welcome pack:</strong> Please read this pack carefully - it prevents unnecessary prolonging of the dog's settling-in period.</p>
           </div>
+        </div>
       </main>
     </div>
     <footer class="text-center text-xs text-gray-500 p-4">© BTC: For Dogs Bulgaria</footer>
