@@ -20,10 +20,10 @@
             <img src="./images/BTC_BG1.jpg" alt="BTC Welcome Image" style="max-width:100%;height:auto;border-radius:10px;margin-bottom:10px;" />
             <p>We would like to thank you for rescuing your dog with us. All the necessary information can be found in this welcome pack.</p>
             <p><strong>PLEASE READ IT</strong></p>
-            <p><strong>An extra word regarding your welcome pack:</strong> Please read this pack carefully — it prevents unnecessary prolonging of the dog's settling-in period.</p>
+            <p><strong>An extra word regarding your welcome pack:</strong> Please read this pack carefully - it prevents unnecessary prolonging of the dog's settling-in period.</p>
           </div>
         `},
-        {id: "adopter-contract", title: "Adopter's Contract", flag: "red", html: `
+        {id: "adopter-contract", title: "Adopter's Contract", image: "./images/contract_icon.jpg", flag: "red", html: `
           <p><strong>VERY IMPORTANT — Adopter's Contract</strong></p>
           <p>Please <strong>Print it, sign it, scan it and return to the email address provided</strong>: <a href="mailto:${'{{email}}'}">${'{{email}}'}</a></p>
           <p><a class="btn-download" href="${'{{pdf}}'}" target="_blank" rel="noopener">Download contract (PDF)</a></p>
@@ -31,10 +31,9 @@
         {id: "what-to-expect", title: "What To Expect", flag: "orange", html: `
           <p>What to expect during the coming days and weeks.</p>
         `},
-        {id: "the-gift-of-time", title: "The Gift of Time", flag: "red", html: `
-          <p><strong>Some dogs adapt straight away, and some don't. They need time and space to decompress and bond with you.</strong></p>
-          <p>Give the dog quiet time, clear routines and gentle introductions to new places and people.</p>
-          <p><a class="btn-download" href="gift-of-time.html">Open full 'The Gift of Time' page</a></p>
+        {id: "the-gift-of-time", title: "The Gift of Time", image: "./images/GOT_icon.jpg", flag: "red", html: `
+          <p>Please take some time to read this beautifully written piece as it will help both you and your new family member as they settle in to their new home.</p>
+          <p><a class="btn-download" href="gift-of-time.html">Read 'The Gift of Time'</a></p>
         `},
         {id: "are-they-house-trained", title: "Are They House Trained?", flag: "green", html: `
           <p>Information about toileting and house training.</p>
@@ -212,7 +211,17 @@
       section.id = sec.id;
       section.className = 'card';
       const pill = sec.flag ? `<span class="flag-pill ${flagClass(sec.flag)}" aria-hidden></span>` : '';
-      section.innerHTML = `<h2>${pill}<span>${sec.title}</span></h2>` + sec.html;
+      
+      // Add thumbnail layout for all sections except welcome
+      if (sec.id !== 'welcome') {
+        section.classList.add('with-thumbnail');
+        const imageUrl = sec.image || './images/placeholder.jpg';
+        section.innerHTML = `<h2>${pill}<span>${sec.title}</span></h2>` +
+          `<img src="${imageUrl}" alt="${sec.title}" class="card-thumbnail" />` +
+          `<div class="card-content">${sec.html}</div>`;
+      } else {
+        section.innerHTML = `<h2>${pill}<span>${sec.title}</span></h2>` + sec.html;
+      }
       contentArea.appendChild(section);
     });
 
