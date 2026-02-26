@@ -93,7 +93,7 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 /* Flag images */
 .flag-icon {
   width: 28px;
-  height: auto;
+  height: 15%;
   flex-shrink: 0;
 }
 
