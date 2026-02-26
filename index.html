@@ -18,8 +18,9 @@
           <p>Please <strong>Print it, sign it, scan it and return to the email address provided</strong>: <a href="mailto:${'{{email}}'}">${'{{email}}'}</a></p>
           <p><a class="btn-download" href="${'{{pdf}}'}" target="_blank" rel="noopener">Download contract (PDF)</a></p>
         `},
-        {id: "what-to-expect", title: "What To Expect", flag: "orange", html: `
-          <p>What to expect during the coming days and weeks.</p>
+        {id: "what-to-expect", title: "What To Expect", image: "./images/whattoexpect.jpg", flag: "orange", html: `
+          <p>What to expect during your rescue journey.</p>
+          <p><a class="btn-download" href="whattoexpect.html">What To Expect</a></p>
         `},
         {id: "the-gift-of-time", title: "The Gift of Time", image: "./images/GOT_icon.jpg", flag: "red", html: `
           <p>Please take some time to read this beautifully written piece as it will help both you and your new family member as they settle in to their new home.</p>
@@ -33,8 +34,9 @@
           <p>The rescue doesn't approve of crate use.</p>
           <p><a class="btn-download" href="crates.html">Find Out Why</a></p>
         `},
-        {id: "retractable-leads", title: "Retractable Leads", flag: "orange", html: `
+        {id: "retractable-leads", title: "Retractable Leads", image: "./images/retractablelead.jpg", flag: "orange", html: `
           <p>Guidance on using retractable leads safely.</p>
+          <p><a class="btn-download" href="retractablelead.html">Retractable Leads</a></p>
         `},
         {id: "preparation", title: "Preparation", flag: "red", html: `
           <p>Getting your home ready before arrival.</p>
@@ -162,7 +164,25 @@
             <p>We would like to thank you for rescuing your dog with us. All the necessary information can be found in this welcome pack.</p>
             <p><strong>PLEASE READ IT</strong></p>
             <p><strong>An extra word regarding your welcome pack:</strong> Please read this pack carefully - it prevents unnecessary prolonging of the dog's settling-in period.</p>
+            <!-- Flag Information Panel -->
+          <div class="info-panel">
+            <div class="info-row critical">
+              <img src="./images/RedFlag.jpg" alt="Red Flag" class="flag-icon">
+              <span class="info-text">MUST READ!</span>
+            </div>
+
+            <div class="info-row warning">
+              <img src="./images/YellowFlag.jpg" alt="Yellow/Orange Flag" class="flag-icon">
+              <span class="info-text">SHOULD READ!</span>
+            </div>
+
+            <div class="info-row positive">
+              <img src="./images/GreenFlag.jpg" alt="Green Flag" class="flag-icon">
+              <span class="info-text">Useful Information</span>
+            </div>
           </div>
+          </div>
+          
         </div>
           <h2>Treats For Streets (Shop)</h2>
           <p>Support the charity via the online shop: <a href="#">Treats For Streets</a></p>
