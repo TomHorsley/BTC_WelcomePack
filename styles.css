@@ -70,30 +70,32 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 
 /* Panel container */
 .info-panel {
-  background-color: var(--card-bg);
+  background-color: var(--cardbg);
   color: var(--card-text);
   padding: 16px;
   border-radius: 8px;
 
   display: flex;
-  flex-wrap: wrap;           /* allow wrapping */
+  flex-wrap: wrap;
   gap: 16px;
 }
 
-/* Each item */
+/* Each item / row */
 .info-row {
   display: flex;
-  align-items: center;
+  align-items: center;        /* vertical centering */
+  justify-content: center;    /* horizontal centering */
   gap: 10px;
 
-  /* Make each item behave like a column on large screens */
   flex: 1 1 auto;
+  text-align: center;
 }
 
 /* Flag images */
 .flag-icon {
-  width: 28px;
-  height: 15%;
+  width: 25%;                 /* ~25% of original rendered size */
+  max-width: 28px;            /* safety cap so it doesn’t get huge */
+  height: auto;
   flex-shrink: 0;
 }
 
