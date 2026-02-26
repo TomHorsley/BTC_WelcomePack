@@ -70,7 +70,7 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 
 /* Panel container */
 .info-panel {
-  background-color: var(--cardbg);
+  background-color: var(--card-bgbg);
   color: var(--card-text);
   padding: 16px;
   border-radius: 8px;
@@ -93,8 +93,8 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 
 /* Flag images */
 .flag-icon {
-  width: 18px;                 
-  height: auto;
+  width: 22px;                 
+  height: 22px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -109,6 +109,7 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 @media (max-width: 600px) {
   .info-panel {
     flex-direction: column;
+    justify-content: center;
   }
 }
 
