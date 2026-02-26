@@ -109,7 +109,7 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 @media (max-width: 600px) {
   .info-panel {
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
   }
 }
 
