@@ -93,9 +93,9 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 
 /* Flag images */
 .flag-icon {
-  width: 25%;                 /* ~25% of original rendered size */
-  max-width: 28px;            /* safety cap so it doesn’t get huge */
+  width: 18px;                 
   height: auto;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
