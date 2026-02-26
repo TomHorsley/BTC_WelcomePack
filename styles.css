@@ -70,7 +70,7 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 
 /* Panel container */
 .info-panel {
-  background-color: var(--card-bgbg);
+  background-color: var(--card-bg);
   color: var(--card-text);
   padding: 16px;
   border-radius: 8px;
