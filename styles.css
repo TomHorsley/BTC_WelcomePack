@@ -146,6 +146,71 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
   height: auto;
 }
 
+.tfs-banner {
+  background: linear-gradient(135deg, #ff8a00, #ffb347);
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  max-width: 520px;
+  margin: 2rem auto;
+  text-align: center;
+  animation: tfs-fade-in 0.6s ease-out;
+}
+
+.tfs-banner h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+
+.tfs-banner p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.tfs-link {
+  display: inline-block;
+  margin-left: 0.4rem;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.tfs-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.tfs-link:hover::after {
+  transform: scaleX(1);
+}
+
+.tfs-link:hover {
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes tfs-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Mobile: stack vertically */
 @media (max-width: 600px) {
   .info-panel {
