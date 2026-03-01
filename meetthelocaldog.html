@@ -26,6 +26,19 @@ The best way to help a scared rescue dog settle in is to provide them with a pre
 </div>
 
     <p style="text-align:center;margin-top:20px;"><button onclick="location.href='index.html'" style="background:#064e3b;color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer">Home</button></p>
+
+    <div id="site-footer"></div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        fetch('footer.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('site-footer').innerHTML = html;
+          });
+      });
+    </script>
+
   </main>
 </body>
 </html>
