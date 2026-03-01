@@ -249,13 +249,24 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 .contact-card {
   background: linear-gradient(135deg, #ece8c6, #a89759);
   color: #393838;
-  padding: 1.5rem;
+  padding: 1.1rem;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   max-width: 100%;
   margin: 1rem auto;
   text-align: center;
-  animation: tfs-fade-in 0.6s ease-out;
+  animation: contact-fade-in 0.6s ease-out;
+}
+
+@keyframes contact-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .footer-inner {
