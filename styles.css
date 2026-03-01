@@ -233,13 +233,20 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
   flex-direction: column; /* stack vertically */
   gap: 0.5rem;
 }
+
+.footer-hours-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* stack vertically */
+  gap: 0.5rem;
+}
 .contact-card {
   background: linear-gradient(135deg, #ece8c6, #a89759);
   color: #393838;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  max-width: 520px;
+  max-width: 800px;
   margin: 1rem auto;
   text-align: center;
   animation: tfs-fade-in 0.6s ease-out;
