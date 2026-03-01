@@ -47,7 +47,11 @@ nav.sidebar{width:280px;position:fixed;left:0;top:64px;bottom:0;background:var(-
 
 nav.sidebar.open{transform:translateX(0)}
 
-@media(min-width:820px){nav.sidebar{transform:none;position:static;width:280px}}
+@media(min-width:820px){
+  main {
+    margin-left: 0 !important;
+  }
+}
 
 .contentsLabel{font-size:12px;color:var(--muted);text-transform:uppercase;margin-bottom:8px}
 
@@ -58,8 +62,6 @@ nav.sidebar.open{transform:translateX(0)}
 #navList a:hover{background:rgba(0,0,0,0.03)}
 
 main{flex:1;margin-left:0;padding:20px;min-height:400px}
-
-@media(min-width:820px){main{margin-left:280px}}
 
 .content-wrap{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
 
@@ -224,6 +226,7 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 .site-footer {
   background: var(--card-bg);
   color: var(--card-text);
+  align-content: center;
   padding: 1rem;
 }
 .contact-card-wrapper {
@@ -292,3 +295,12 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
   }
 }
 
+/* Remove the hamburger button */
+#menuToggle {
+  display: none !important;
+}
+
+/* Remove the sidebar navigation */
+nav.sidebar {
+  display: none !important;
+}
