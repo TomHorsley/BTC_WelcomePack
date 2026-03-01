@@ -275,7 +275,7 @@
       // Add thumbnail layout for all sections except welcome
       if (sec.id !== 'welcome') {
         section.classList.add('with-thumbnail');
-        const imageUrl = sec.image || './images/placeholder.jpg';
+        const imageUrl = sec.image || './images/placeholder.png';
         section.innerHTML = `<h2>${pill}<span>${sec.title}</span></h2>` +
           `<img src="${imageUrl}" alt="${sec.title}" class="card-thumbnail" />` +
           `<div class="card-content">${sec.html}</div>`;
@@ -300,15 +300,11 @@
       });
     });
 
-    // HELP button scrolls to Help Lost Dog section and opens a visual callout
+    // HELP button opens Help Lost Dog section
+
     const helpBtn = document.getElementById('helpBtn');
-    helpBtn.addEventListener('click', ()=>{
-      const target = document.getElementById('./helplostdog.html');
-      if(target){
-        target.scrollIntoView({behavior:'smooth',block:'center'});
-        target.classList.add('callout-dontpanic');
-        setTimeout(()=> target.classList.remove('callout-dontpanic'), 5000);
-      }
+    helpBtn.addEventListener('click', () => {
+      window.location.href = 'helplostdog.html';
     });
 
     // Lazy-load YouTube iframes for responsiveness and perf
