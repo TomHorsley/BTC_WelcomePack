@@ -218,6 +218,10 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
     flex-direction: column;
     justify-content: left;
   }
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 /* footer{padding:14px;text-align:center;color:rgba(15,23,42,0.6)} */
@@ -248,14 +252,14 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  max-width: 800px;
+  max-width: 100%;
   margin: 1rem auto;
   text-align: center;
   animation: tfs-fade-in 0.6s ease-out;
 }
 
 .footer-inner {
-  max-width: 800px;
+  max-width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -285,14 +289,6 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 
 .footer-nav a:hover {
   text-decoration: underline;
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .footer-inner {
-    flex-direction: column;
-    text-align: center;
-  }
 }
 
 /* Remove the hamburger button */
