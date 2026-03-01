@@ -146,7 +146,7 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
   height: auto;
 }
 
-.tfs-banner {
+.tfs-banner .contact-card {
   background: linear-gradient(135deg, #ff8a00, #ffb347);
   color: #ffffff;
   padding: 1.5rem 2rem;
