@@ -19,7 +19,6 @@ html,body,#app{
   overflow-x: hidden;
 }
 
-
 body{
   margin:0;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
@@ -253,7 +252,7 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 }
 
 .footer-inner {
-  max-width: 1100px;
+  max-width: 800px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
