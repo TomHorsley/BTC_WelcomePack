@@ -3,69 +3,124 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Help! I've Lost My Dog — BTC: For Dogs Bulgaria</title>
+  <title>EMERGENCY: Lost Dog — BTC Bulgaria</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --emergency-red: #ef4444;
+    }
+    .panic-header {
+      background: var(--emergency-red);
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+      border-radius: 0 0 25px 25px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .priority-grid {
+      display: grid;
+      gap: 20px;
+      margin-top: 25px;
+    }
+    .action-card {
+      border-left: 8px solid var(--page-bg) !important;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .action-card h2 {
+      color: var(--page-bg) !important;
+      text-transform: uppercase;
+      font-size: 1.3rem !important;
+      margin: 0 !important;
+    }
+    .emergency-button {
+      background: var(--page-bg);
+      color: var(--card-bg);
+      padding: 12px;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .contact-list {
+      background: rgba(254, 217, 102, 0.1);
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+    .warning-box {
+      border: 2px dashed var(--emergency-red);
+      padding: 15px;
+      border-radius: 8px;
+      background: rgba(239, 68, 68, 0.05);
+    }
+  </style>
 </head>
-<body>
-  <main style="max-width:860px;margin:36px auto;padding:18px;">
-    <h1>Help! I've Lost My Dog</h1>
+<body style="background: var(--page-bg);">
 
-    <!-- EDITABLE CONTENT: Replace or extend the HTML inside the #helplostdog-content div. -->
-    <div id="helplostdog-content">
+  <header class="panic-header">
+    <h1 style="margin:0; font-size: 2.2rem;">DON'T PANIC.</h1>
+    <p style="font-weight: 600; margin-top: 10px;">Your dog needs you to be calm and patient to get safe.</p>
+  </header>
 
-      <h3>DON'T PANIC!</h3>
-      <h4>What to do if your dog goes missing</h4>
+  <main class="emergency-container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
 
-        <ul>
-          <li>Try not to panic: your dog doesn't want to be lost, but it needs your help to get safe.</li>
-          <li>Don't immediately leave the area: many dogs try to return to the place they were lost from (often much later or at night). Stay there and calmly call your dog. Patience is the key. You should quietly walk the area, avoid groups of strangers searching and making noise. It will confuse your dog.</li>
-          <li>If your dog is missing from a walk when you drove, keep starting your engine - your dog will know the sound of your car - and leave a door or boot open for the dog to jump in. Try not to leave the area in case your dog returns. They often return at dusk or in the night.</li>
-          <li>If your dog is missing from a walk, stay in the area. Make sure any gate or door at home is open (even at night); if your dog isn't able to get in then it might run off again. Leave their dog bed and some food outside along with worn clothing or bedding of the person they are most bonded with. Your dog doesn't want to find its own smell - you need to leave out your own worn clothing or bedding to help guide your dog home. The contents of your vacuum are also useful to leave out.</li>
-          <li>Make sure you notify all the relevant people as soon as possible: the microchip database company so the chip can be flagged as missing, the dog warden, any local rescues that take in dogs, the local stray pounds, local vets and Leesa. You can find many of these numbers on the local council website.</li>
-          <li>If you are near a railway line, please inform Network Rail as dogs are drawn to railway lines: 03457114141 (24 hour emergency helpline). Likewise if you are near a motorway, please inform the Highways Agency: 0300 123 5000 or Traffic Wales: 0845 602 6020.</li>
-          <li>Register your dog as missing on doglost: this is a free service that alerts people around the country: <a href="www.doglost.co.uk">Dog Lost UK</a>. They also provide a template for a lost dog poster which you can adapt.</li>
-          <li>Get posters out: these need to be around the local area, have photos of your dog on, location missing from, contact telephone numbers and <strong>DO NOT CHASE OR TRY TO CATCH, PLEASE REPORT SIGHTINGS ONLY.</strong></li>
+    <div class="priority-grid">
+      
+      <section class="card action-card">
+        <h2>1. Immediate Action at the Scene</h2>
+        <p><strong>Stay put:</strong> Many dogs return to the spot they were lost from, often at dusk or night. If you drove there, keep starting the engine—they know your car's sound—and leave the boot/door open.</p>
+        <p><strong>Guided by Scent:</strong> Leave out your <strong>worn clothing</strong> or bedding. They need to find your scent, not their own. Emptying your vacuum contents in the area also helps.</p>
+      </section>
+
+      <section class="card action-card">
+        <h2>2. Essential Notifications</h2>
+        <p>Notify the microchip database, dog warden, local rescues, stray pounds, vets, and Leesa immediately.</p>
+        <div class="contact-list">
+          <strong>Emergency Helplines:</strong>
+          <ul>
+            <li><strong>Network Rail:</strong> 03457114141 (Dogs are drawn to tracks)</li>
+            <li><strong>Highways Agency:</strong> 0300 123 5000</li>
+            <li><strong>Traffic Wales:</strong> 0845 602 6020</li>
           </ul>
-        
-          <p>In each area there are drone search and rescue groups. There is a national one Drone Sar (on facebook) where you can register your dog as missing and they will offer advice. You also need to find the ones local to your area. These are all groups run by volunteers who have lots of experience in tracking and reuniting lost dogs. None of them charge for their service. Some are more open to working with other groups than others.</p>
+        </div>
+        <a href="https://www.doglost.co.uk" class="emergency-button" target="_blank">REGISTER ON DOGLOST UK (FREE)</a>
+      </section>
 
-          <p>Please don't rely on a drone to find your missing dog. You need to be out ground searching for it. It is vital that you cover the area in missing posters as well as posting on any local social media pages. You need to ask for sightings only (date/time/location and direction of travel). You do not want people chasing or hunting down your dog, however good their intentions. A dog feeling hunted will be forced into making decisions that aren't safe for it. A dog that is chased is at risk of being injured or killed as a result. If you are working with a lost dog search group they will advise you.</p>
-          <p>If it's a recent sighting, you need to head to the sighting yourself with one other person. Take smelly food like hot dogs / freshly cooked chicken / tinned fish like mackerel or sardines and quietly walk around while gently calling your dogs name. If its an old sighting, get posters up, lost dogs often do a circuit of the same areas so you want people looking out for it. If your dog doesn't appear, leave some of your own worn clothing or bedding in the area. The dog will be looking for your scent to come back to. Often the lost dog search groups will loan cameras so that the area can be monitored to see if the dog returns. A plan can then be put in place.</p>
-          <p>When a dog is missing, it goes into survival mode. This means it often won't recognise its owner. It is essential to not get upset by this. If you are at a sighting and you've seen your dog, you should sit on the floor, avoiding eye contact, take off your socks and throw them towards the dog for your scent to get out and sing or hum quietly. Let your dog take the time to work out it is you. This can take minutes or even hours, patience is the key. Do not chase or try to catch your dog. It will run. Your dog isn't thinking like your dog at this point, it is trying to survive. It will become your dog again once you have it safe so patience is essential.</p>
-          <p>Some dogs are luckily found by drone. If your dog is spotted, follow the advice above. Don't let emotion take over and go racing in to only scare your dog again. Calm and patient is key.</p>
-        <p>Sometimes dogs need to be trapped, this isn't cruel but is a last resort. The search group will take the lead on this.</p>
-        <p>Be aware of scammers: there are some not very nice people out there who will contact those with lost dogs demanding money or they will hurt the dog. They don't have your dog, they are trying to scare you into handing over money. Likewise there are scammers pretending to be the lost dog search groups and asking for money, no lost dog search group charges owners as they are all voluntary. Hang up on anyone suspicious and never give payment to anyone that says they have your dog or will need paying to help.</p>
-        <p>If the worst happens and your dog does go missing, we have a volunteer for the rescue who is also part of their local lost dog search group. They will be able to advise.</p>
+      <section class="card action-card">
+        <h2>3. If You See Your Dog</h2>
+        <div class="warning-box">
+          <p><strong>DO NOT CHASE:</strong> This triggers survival mode. Your dog may not recognize you.</p>
+          <p><strong>Calming Signals:</strong> Sit on the floor, avoid eye contact, and throw your <strong>socks</strong> toward them to get your scent out. Sing or hum quietly and let them work out it's you.</p>
+        </div>
+      </section>
 
-        <h4>Harness:</h4>
-        <p>If you walk your dog on a harness, please make sure it is an escape proof one. One of the most popular brands - Julius K9 - is not escape proof. If a dog panics and reverses, the harness comes off - this is why two point connection is so important. There are lots of different options available, but with all harnesses it is imperative that they are adjusted properly to fit your dog. Check frequently that they haven't become loose.</p>
+      <section class="card action-card">
+        <h2>4. Search & Posters</h2>
+        <p>Use posters with photos and your number. State clearly: <strong>"REPORT SIGHTINGS ONLY—DO NOT CHASE"</strong>. A chased dog is at risk of being forced into unsafe decisions or killed.</p>
+        <p>Contact <strong>Drone SAR</strong> on Facebook for volunteer tracking assistance.</p>
+      </section>
 
-        <h4>Trackers:</h4>
-        <p>There are lots of cheap trackers available which run off Bluetooth or phone signal. This includes the Apple Air Tag. These are not worth the money and are very limited in the help they give you to track a lost dog. If you invest in a tracker you want one that uses GPS if you want to find your dog. There are two recommended options:</p>
+      <section class="card action-card" style="border-left-color: var(--emergency-red) !important;">
+        <h2 style="color: var(--emergency-red) !important;">⚠️ Scammer Warning</h2>
+        <p>Never hand over money to anyone claiming they have your dog or demanding payment for search services. Voluntary groups <strong>never</strong> charge.</p>
+      </section>
 
-        <strong>Tractive:</strong>
-        <p>This is the market leader as it uses GPS but also does live updates. You can set safe zones meaning the battery lasts longer. It also gives health updates. This is cheaper to purchase however there is a yearly subscription charge – its usually cheaper to do the 2 year subscription. The premium package is also better than the basic.  https://tractive.com/</p>
-        <strong>Pitpat:</strong>
-        <p>This also uses GPS and has live updates. It is more expensive to buy but doesn’t have a subscription. https://www.pitpat.com/</p>
-        <br>
-        <img src="./images/lost dog.677e565e586f67.14705018.jpg">
+      <section class="card action-card">
+        <h2>Prevention & Trackers</h2>
+        <p>Ensure your harness is escape-proof (avoid Julius K9 for panicking dogs). For tracking, use <strong>GPS</strong> (Tractive or Pitpat) rather than Bluetooth tags like AirTags.</p>
+      </section>
+
     </div>
 
-    <p style="text-align:center;margin-top:20px;"><button onclick="location.href='index.html'" style="background:#064e3b;color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer">Home</button></p>
-  
-    <div id="site-footer"></div>
+    <p style="text-align:center; margin-top:30px;">
+      <button onclick="location.href='index.html'" class="btn-download" style="padding: 15px 40px; font-size: 1.1rem;">BACK TO HOME</button>
+    </p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        fetch('footer.html')
-          .then(res => res.text())
-          .then(html => {
-            document.getElementById('site-footer').innerHTML = html;
-          });
-      });
-    </script>
-  
   </main>
-  
+
+  <div id="site-footer"></div>
 </body>
 </html>
