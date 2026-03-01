@@ -219,5 +219,46 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
   }
 }
 
-footer{padding:14px;text-align:center;color:rgba(15,23,42,0.6)}
+/* footer{padding:14px;text-align:center;color:rgba(15,23,42,0.6)} */
+
+/* Footer */
+.site-footer {
+  background: #111;
+  color: #fff;
+  padding: 1rem;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: #8ecaff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 

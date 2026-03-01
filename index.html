@@ -219,7 +219,17 @@
 
       </main>
     </div>
-    <footer class="text-center text-xs text-gray-500 p-4">© BTC: For Dogs Bulgaria</footer>
+          <div id="site-footer"></div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          fetch('/footer.html')
+            .then(res => res.text())
+            .then(html => {
+              document.getElementById('site-footer').innerHTML = html;
+            });
+        });
+      </script>
   </div>
 
   <script>
