@@ -71,7 +71,7 @@
       
       <section class="card action-card">
         <h2>1. Immediate Action at the Scene</h2>
-        <p><strong>Stay put:</strong> Many dogs return to the spot they were lost from, often at dusk or night. If you drove there, keep starting the engine—they know your car's sound—and leave the boot/door open.</p>
+        <p><strong>Stay put:</strong> Many dogs return to the spot they were lost from, often at dusk or night. If you drove there, keep starting the engine - they know your car's sound - and leave the boot/door open.</p>
         <p><strong>Guided by Scent:</strong> Leave out your <strong>worn clothing</strong> or bedding. They need to find your scent, not their own. Emptying your vacuum contents in the area also helps.</p>
       </section>
 
@@ -122,5 +122,15 @@
   </main>
 
   <div id="site-footer"></div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        fetch('footer.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('site-footer').innerHTML = html;
+          });
+      });
+    </script>
 </body>
 </html>
