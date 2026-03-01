@@ -303,7 +303,7 @@
     // HELP button scrolls to Help Lost Dog section and opens a visual callout
     const helpBtn = document.getElementById('helpBtn');
     helpBtn.addEventListener('click', ()=>{
-      const target = document.getElementById('helplostdog');
+      const target = document.getElementById('./helplostdog.html');
       if(target){
         target.scrollIntoView({behavior:'smooth',block:'center'});
         target.classList.add('callout-dontpanic');
