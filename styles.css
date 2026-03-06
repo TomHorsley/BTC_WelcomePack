@@ -328,14 +328,23 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 nav.sidebar {
   display: none !important;
 }
+.doginfo-cards-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  justify-content: center;
+}
 
 .doginfo-card {
-  width: 260px;
-  background: rgb(199, 199, 152);
+  background: white;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   padding: 20px;
   text-align: center;
+  flex: 1 1 200px; /* grow and shrink, min width 200px */
+  max-width: 300px; /* keeps cards from getting too wide */
+  box-sizing: border-box;
+  margin-bottom: 15px;
 }
 
 .doginfo-icon {
@@ -371,3 +380,11 @@ nav.sidebar {
 
 .doginfo-open-link:hover {
   background: #357abf;
+}
+
+/* Responsive stacking for small screens */
+@media (max-width: 600px) {
+  .doginfo-card {
+    max-width: 100%;
+  }
+}
