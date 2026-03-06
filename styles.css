@@ -331,7 +331,7 @@ nav.sidebar {
 
 .doginfo-card {
   width: 260px;
-  background: white;
+  background: rgb(199, 199, 152);
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   padding: 20px;
@@ -363,7 +363,7 @@ nav.sidebar {
   display: inline-block;
   padding: 10px 14px;
   border-radius: 6px;
-  background: #4a90e2;
+  background: #2e3134;
   color: white;
   text-decoration: none;
   font-size: 14px;
