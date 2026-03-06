@@ -340,13 +340,15 @@ nav.sidebar {
 
 .doginfo-icon {
   margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
 }
 
-.doginfo-icon-svg {
+/* .doginfo-icon{
   width: 50px;
   height: 50px;
   fill: #4a90e2;
-}
+} */
 
 .doginfo-title {
   font-size: 18px;
