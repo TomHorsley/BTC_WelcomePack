@@ -19,6 +19,18 @@ html,body,#app{
   overflow-x: hidden;
 }
 
+iframe{
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Standard widescreen ratio */
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto; /* Essential to prevent stretching or squishing */
+  display: block; /* Removes unwanted small space at the bottom */
+}
+
 body{
   margin:0;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
