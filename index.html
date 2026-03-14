@@ -219,18 +219,19 @@
 
       </main>
     </div>
-      <div id="site-footer">
+ <!-- Display Footer -->
+    <div id="site-footer"></div>
 
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          fetch('footer.html')
-            .then(res => res.text())
-            .then(html => {
-              document.getElementById('site-footer').innerHTML = html;
-            });
-        });
-      </script>
-      </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        fetch('footer.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('site-footer').innerHTML = html;
+          });
+      });
+    </script>
+    
   </div>
 
   <script>
