@@ -452,6 +452,52 @@ nav.sidebar {
   background: #357abf;
 }
 
+/* Equipment Cards */
+
+.equip-card {
+  background-color: #3e4451; /* Dark slate background */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  max-width: 500px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.equip-image-container {
+  background-color: white;
+  border-radius: 12px;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Prevents the image box from squishing */
+}
+
+.equip-image-container img {
+  width: 80%;
+  height: auto;
+}
+
+.equip-card-content {
+  margin-left: 24px;
+}
+
+.equip-card-content h2 {
+  color: #f7d665; /* Gold/Yellow title color */
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.equip-card-content p {
+  color: #c5c8ce; /* Slightly muted white/grey text */
+  margin: 0;
+  line-height: 1.4;
+  font-size: 1.05rem;
+}
+
 /* Responsive stacking for small screens */
 @media (max-width: 600px) {
   .doginfo-card {
