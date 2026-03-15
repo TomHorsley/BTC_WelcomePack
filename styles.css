@@ -455,13 +455,21 @@ nav.sidebar {
 /* Equipment Cards */
 
 .equip-card {
-  background-color: #3e4451; /* Dark slate background */
+  background-color: #3e4451;
   border-radius: 8px;
   display: flex;
   align-items: center;
   padding: 24px;
-  max-width: 500px;
+  /* Updated sizing logic below */
+  flex: 1 1 450px;    /* Grow/Shrink, with a 450px "ideal" width */
+  max-width: 500px;   /* Prevents them from getting too wide on huge screens */
+  margin-bottom: 5px; /* The 5px gap you requested beneath each card */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure the image container doesn't shrink when text is long */
+.equip-image-container {
+  flex-shrink: 0;
 }
 
 .equip-image-container {
@@ -507,22 +515,14 @@ nav.sidebar {
     max-width: 100%;
   }
   .equip-card {
-    flex-direction: column; /* Stacks image on top of text */
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-  }
-  .equip-image-container {
-    margin-bottom: 20px; /* Adds space between image and title */
-    width: 100%;        /* Allows the white box to fill the width */
-    max-width: 200px;   /* But keeps it from getting too huge */
-  }
-
-  .equip-card-content {
-    margin-left: 0;     /* Removes the side margin used in desktop view */
-  }
-
-  .equip-card-content h2 {
-    font-size: 1.3rem;  /* Slightly smaller font for mobile screens */
+      flex: 1 1 100%;    /* Take full width on mobile */
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .equip-card-content {
+      margin-left: 0;
+      margin-top: 15px;
+    }
   }
 }
