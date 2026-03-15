@@ -506,4 +506,23 @@ nav.sidebar {
    .arrivalday-card {
     max-width: 100%;
   }
+  .equip-card {
+    flex-direction: column; /* Stacks image on top of text */
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+  }
+  .equip-image-container {
+    margin-bottom: 20px; /* Adds space between image and title */
+    width: 100%;        /* Allows the white box to fill the width */
+    max-width: 200px;   /* But keeps it from getting too huge */
+  }
+
+  .equip-card-content {
+    margin-left: 0;     /* Removes the side margin used in desktop view */
+  }
+
+  .equip-card-content h2 {
+    font-size: 1.3rem;  /* Slightly smaller font for mobile screens */
+  }
 }
