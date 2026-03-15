@@ -454,22 +454,26 @@ nav.sidebar {
 
 /* Equipment Cards */
 
+.equip-cards-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; 
+  justify-content: center;
+  padding: 10px;
+}
 .equip-card {
   background-color: #3e4451;
   border-radius: 8px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   padding: 24px;
   /* Updated sizing logic below */
-  flex: 1 1 450px;    /* Grow/Shrink, with a 450px "ideal" width */
+  flex: 1 1 350px;   
   max-width: 500px;   /* Prevents them from getting too wide on huge screens */
   margin-bottom: 5px; /* The 5px gap you requested beneath each card */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Ensure the image container doesn't shrink when text is long */
-.equip-image-container {
-  flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .equip-image-container {
@@ -489,7 +493,8 @@ nav.sidebar {
 }
 
 .equip-card-content {
-  margin-left: 24px;
+  margin-left: 20px;
+  text-align: left;
 }
 
 .equip-card-content h2 {
@@ -515,7 +520,9 @@ nav.sidebar {
     max-width: 100%;
   }
   .equip-card {
-      flex: 1 1 100%;    /* Take full width on mobile */
+    max-width: 100%;
+  }
+      /* flex: 1 1 100%;  
       flex-direction: column;
       text-align: center;
     }
@@ -523,6 +530,5 @@ nav.sidebar {
     .equip-card-content {
       margin-left: 0;
       margin-top: 15px;
-    }
-  }
+    } */
 }
