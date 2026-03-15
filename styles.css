@@ -115,16 +115,16 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 .welcome h2{margin:0 0 8px 0;font-size:18px;color:var(--welcome-text);display:flex;align-items:center;gap:10px}
 
 /* show image-based flag icons (no shadow). Use pseudo-elements so images scale cleanly.
-  Images live in ./images/ (RedFlag.jpg, YellowFlag.jpg, GreenFlag.jpg) */
+  Images live in ./images/ (RedFlag.png, YellowFlag.png, GreenFlag.png) */
 .flag-pill{display:inline-block;position:relative;width:20px;height:20px;flex:0 0 20px;vertical-align:middle;font-size:0;line-height:0;overflow:hidden;text-indent:-9999px;margin-right:8px}
 
 .flag-pill::before{content:'';position:absolute;inset:0;border-radius:3px;background-repeat:no-repeat;background-position:center;background-size:contain;box-shadow:none !important;filter:none !important}
 
-.flag-red::before{background-image:url('./images/RedFlag.jpg')}
+.flag-red::before{background-image:url('./images/RedFlag.png')}
 
-.flag-orange::before{background-image:url('./images/YellowFlag.jpg')}
+.flag-orange::before{background-image:url('./images/YellowFlag.png')}
 
-.flag-green::before{background-image:url('./images/GreenFlag.jpg')}
+.flag-green::before{background-image:url('./images/GreenFlag.png')}
 
 .video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-top:12px}
 
