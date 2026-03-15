@@ -31,6 +31,27 @@ img {
   display: block; /* Removes unwanted small space at the bottom */
 }
 
+.logo-wrapper {
+  display: flex;
+  justify-content: center; /* This centers the image horizontally */
+  align-items: center;     /* Ensures it's centered if the container has extra height */
+  width: 100%;             /* Spans the full width of the screen */
+  padding: 10px 0;         /* Optional: adds some breathing room top and bottom */
+}
+
+.logo-img {
+  max-width: 25%;
+  height: auto;
+  border-radius: 10px;
+  /* margin-bottom: 10px; <-- Removed margin because padding on wrapper is cleaner */
+}
+
+@media (max-width: 600px) {
+  .logo-img {
+    max-width: 60%; /* Makes the logo larger and readable on small screens */
+  }
+}
+
 body{
   margin:0;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
