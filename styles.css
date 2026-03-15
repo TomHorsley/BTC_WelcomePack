@@ -305,7 +305,7 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer-links {
