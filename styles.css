@@ -294,6 +294,7 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
   color: #ffffff;
   padding: 1.5rem 2rem;
   border-radius: 12px;
+  border-color: #2e3134;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   max-width: 520px;
   margin: 2rem auto;
