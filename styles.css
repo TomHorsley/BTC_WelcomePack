@@ -290,11 +290,12 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 }
 
 .tfs-banner {
-  background: linear-gradient(135deg, #ff8a00, #ffb347);
+  background: linear-gradient(135deg, #302f2e, #898783);
   color: #ffffff;
   padding: 1.5rem 2rem;
   border-radius: 12px;
-  border-color: #2e3134;
+  border-color: #2a2c2d;
+  border-width: 1px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   max-width: 520px;
   margin: 2rem auto;
