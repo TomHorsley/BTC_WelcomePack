@@ -25,10 +25,44 @@ iframe{
   height: auto;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #fff9c4;
+}
+
 img {
   max-width: 100%;
   height: auto; /* Essential to prevent stretching or squishing */
   display: block; /* Removes unwanted small space at the bottom */
+}
+
+.three-images {
+  display: flex;
+  flex-direction: column; /* Default: stacked (mobile-first) */
+  gap: 1rem; /* space between images */
+}
+
+.three-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* When there's enough space (e.g. tablets/desktops) */
+@media (min-width: 768px) {
+  .three-images {
+    flex-direction: row; /* side-by-side */
+    justify-content: space-between;
+  }
+
+  .three-images img {
+    width: 32%; /* 3 images across with spacing */
+  }
 }
 
 .logo-wrapper {
