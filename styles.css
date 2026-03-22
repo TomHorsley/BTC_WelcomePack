@@ -324,8 +324,7 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
     box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4); /* Stronger red shadow */
   }
 }
-
-.callout-dontpanic{background:#fff3f0;border-left:4px solid #ef4444;padding:12px;border-radius:8px}
+/* .callout-dontpanic{background:#fff3f0;border-left:4px solid #ef4444;padding:12px;border-radius:8px} */
 
 /* Panel container */
 .info-panel {
