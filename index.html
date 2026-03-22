@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>BTC: For Dogs Bulgaria — Welcome Pack</title>
   <meta name="description" content="Welcome Pack — BTC: For Dogs Bulgaria" />
+  <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/57b557fd5a.js" crossorigin="anonymous"></script>
   <script>
     // All editable text/content is stored in this single JS constant.
@@ -112,15 +113,15 @@
           <p><a class="btn-download" href="settlingin">Settling In</a></p>
         `},
 
-        {id: "adopting-cat", title: "I'm Adopting A Cat", image: ".\images\adoptingacat.jpg", flag: "green", html: `
+        {id: "adopting-cat", title: "I'm Adopting A Cat", image: "./images/adoptingacat.jpg", flag: "green", html: `
           <p>Tips if you're adopting a cat.</p>
           <p><a class="btn-download" href="adoptingacat">What About Adopting Cats?</a></p>
         `},
-        {id: "training-tips", title: "Training Tips", image: ".\images\trainingtips.jpg",flag: "green", html: `
+        {id: "training-tips", title: "Training Tips", image: "./images/trainingtips.jpg", flag: "green", html: `
           <p>Basic training advice and positive reinforcement techniques.</p>
           <p><a class="btn-download" href="trainingtips.html">Training Hints and Tips</a></p>
         `},
-        {id: "additional-reading", title: "Additional Useful Reading", flag: "green", html: `
+        {id: "additional-reading", title: "Additional Useful Reading", image: "./images/additionalreading.jpg", flag: "green", html: `
           <p>Links and book suggestions for further study.</p>
           <p><a class="btn-download" href="additionalinformation.html">Learn More</a></p>
         `},
@@ -131,7 +132,6 @@
       s.html = s.html.replace(/\{\{email\}\}/g, CONTENT.contactEmail).replace(/\{\{pdf\}\}/g, CONTENT.contract_pdf);
     });
   </script>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
   <div id="app" class="min-h-screen flex flex-col">
@@ -152,15 +152,7 @@
       </div>
     </header>
 
-    <div class="layout">
-      <nav id="sidebar" class="sidebar">
-        <div class="p-4">
-          <div class="contentsLabel">Contents</div>
-          <ul id="navList"></ul>
-        </div>
-      </nav>
-
-      <main id="main">
+    <main id="main">
         <div id="topHelpAnchor"></div>
         <button id="helpBtn" class="help-btn fixed right-4 top-16 z-50 px-4 py-2 rounded-lg shadow-lg">HELP! I've Lost My Dog</button>
 
@@ -192,12 +184,7 @@
 
             <p>If you would prefer to download and print your welcome packe please click the button below:</p>
 
-            <a id="downloadBtn" class="btn-download.reverse" download>Download Welcome PDF</a>
-
-            <script>
-              const welcome_pdf = "./docs/Welcome Pack_Mar2026.pdf";
-              document.getElementById("downloadBtn").href = welcome_pdf;
-            </script>
+            <p><a class="btn-download.reverse" href="./docs/Welcome Pack_Mar2026.pdf">Download Welcome Pack PDF</a></p>
 
             <!-- Flag Information Panel -->
               <div class="info-panel">
