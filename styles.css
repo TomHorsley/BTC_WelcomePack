@@ -317,7 +317,7 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
     bottom: 20px;         /* Move to bottom right for thumb-reach */
     right: 20px;
     padding: 12px 20px;   /* Larger tap target */
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     width: 90px;
     height: 90px;
