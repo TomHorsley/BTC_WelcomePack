@@ -108,8 +108,8 @@ a:hover {
 a.btn-download {
   display: inline-block;
   padding: 10px 16px;
-  background: var(--btn-text);   /* dark background */
-  color: var(--btn-bg);          /* yellow text */
+  background: var(--btn-bg);  
+  color: var(--btn-text);   
   border-radius: 8px;
   text-decoration: none;
   font-size: 14px;
@@ -120,8 +120,8 @@ a.btn-download {
 }
 
 a.btn-download:hover {
-  background: var(--btn-bg);
-  color: var(--btn-text);
+  background: var(--btn-text);
+  color: var(--btn-bg);
 }
 
 a.btn-download.reverse {
