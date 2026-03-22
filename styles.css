@@ -312,13 +312,15 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 /* Enhanced Mobile Styling for Help Button */
 @media (max-width: 600px) {
   .help-btn {
+
     top: auto;            /* Remove top positioning */
     bottom: 20px;         /* Move to bottom right for thumb-reach */
     right: 20px;
     padding: 12px 20px;   /* Larger tap target */
     font-size: 14px;
     font-weight: bold;
-    width: auto;
+    width: 90px;
+    height: 90px;
     max-width: 80%;       /* Prevent it from filling the whole width */
     text-align: center;
     box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4); /* Stronger red shadow */
@@ -481,7 +483,7 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
 
 .light-link:hover {
   color: #f86306;
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 6px rgba(247, 137, 82, 0.8);
 }
 
 @keyframes light-fade-in {
