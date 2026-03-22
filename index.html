@@ -132,6 +132,7 @@
       s.html = s.html.replace(/\{\{email\}\}/g, CONTENT.contactEmail).replace(/\{\{pdf\}\}/g, CONTENT.contract_pdf);
     });
   </script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
   <div id="app" class="min-h-screen flex flex-col">
@@ -152,7 +153,15 @@
       </div>
     </header>
 
-    <main id="main">
+    <div class="layout">
+      <nav id="sidebar" class="sidebar">
+        <div class="p-4">
+          <div class="contentsLabel">Contents</div>
+          <ul id="navList"></ul>
+        </div>
+      </nav>
+
+      <main id="main">
         <div id="topHelpAnchor"></div>
         <button id="helpBtn" class="help-btn fixed right-4 top-16 z-50 px-4 py-2 rounded-lg shadow-lg">HELP! I've Lost My Dog</button>
 
@@ -184,7 +193,7 @@
 
             <p>If you would prefer to download and print your welcome packe please click the button below:</p>
 
-            <p><a class="btn-download.reverse" href="./docs/Welcome Pack_Mar2026.pdf">Download Welcome Pack PDF</a></p>
+            <a class="btn-download.reverse" href="./docs/Welcome Pack_Mar2026.pdf">Download Welcome Pack PDF</a>
 
             <!-- Flag Information Panel -->
               <div class="info-panel">
