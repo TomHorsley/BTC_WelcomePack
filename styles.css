@@ -7,7 +7,8 @@
   --card-bg: #374151;
   --card-text: #fed966; /* text color for card content */  
   --btn-bg: #fed966; /* button background color */
-  --btn-text: #374151; /* button text color */  --accent: #d94660;
+  --btn-text: #374151; /* button text color */  
+  --accent: #d94660;
   --red-flag-bg: #fee2e2; --red-flag-text: #7f1d1d;
   --orange-flag-bg: #fff7ed; --orange-flag-text: #7c2d12;
   --green-flag-bg: #ecfdf5; --green-flag-text: #064e3b;
@@ -119,8 +120,8 @@ a.btn-download {
 }
 
 a.btn-download:hover {
-  background: var(--btn-text);
-  color: var(--btn-bg);
+  background: var(--btn-bg);
+  color: var(--btn-text);
 }
 
 a.btn-download.reverse {
