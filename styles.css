@@ -122,17 +122,27 @@ a.btn-download {
 a.btn-download:hover {
   background: var(--btn-text);
   color: var(--btn-bg);
+  border: 2px solid var(--btn-bg); 
 }
 
-a.btn-download.reverse {
-  background: var(--btn-bg);
-  color: var(--btn-text);
-  border: 2px solid var(--btn-text);
-}
-
-a.btn-download.reverse:hover {
+a.btn-download-reverse {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
   background: var(--btn-text);
   color: var(--btn-bg);
+  border: 2px solid var(--btn-bg);
+}
+
+a.btn-download-reverse:hover {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: 2px solid var(--btn-text); 
 }
 
 /* a#facebookLink{color:#064e3b;text-decoration:underline;font-size:13px} */
