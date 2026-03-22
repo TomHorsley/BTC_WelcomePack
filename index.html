@@ -12,6 +12,7 @@
       siteTitle: "BTC: For Dogs Bulgaria — Welcome Pack",
       contactEmail: "adoptions@example.org",
       contract_pdf: "./docs/March 2026 Contract of Dog Adoption - Break The Chains for Dogs Bulgaria.pdf",
+      welcome_pdf: "./docs/Welcome Pack_Mar2026.pdf",
       facebookUrl: "https://www.facebook.com/groups/319985208569097",
       sections: [
         {id: "adopter-contract", title: "Adopter's Contract", image: "./images/contract_icon.jpg", flag: "red", html: `
@@ -189,6 +190,14 @@
 
             <p><strong>Read this pack carefully - it prevents unnecessary prolonging of the dog's settling-in period.</strong></p>
             <p>Thank you for your understanding.</p>
+
+            <p>If you would prefer to download and print your welcome packe please click the button below:</p>
+
+            <a id="downloadBtn" class="btn-download" download>Download Welcome PDF</a>
+
+            <script>
+              document.getElementById("downloadBtn").href = welcome_pdf;
+            </script>
 
             <!-- Flag Information Panel -->
               <div class="info-panel">
