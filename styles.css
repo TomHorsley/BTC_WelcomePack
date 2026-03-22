@@ -470,6 +470,7 @@ section.card.with-thumbnail > div.card-content{grid-column:2;grid-row:2;display:
   width: 100%;
   height: 2px;
   background: #374151;
+  color: #000000;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.25s ease;
