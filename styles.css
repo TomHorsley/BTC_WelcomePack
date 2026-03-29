@@ -142,7 +142,16 @@ a.btn-download-reverse {
 a.btn-download-reverse:hover {
   background: var(--btn-bg);
   color: var(--btn-text);
-  border: 2px solid var(--btn-text); 
+  border: 2px solid var(--btn-text);
+  /*try throbbing button animation */
+  animation: throb_button 0.8s ease-in-out infinite !important;
+  cursor: pointer;
+}
+
+@keyframes throb_button {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 
 /* a#facebookLink{color:#064e3b;text-decoration:underline;font-size:13px} */
