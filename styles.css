@@ -137,21 +137,34 @@ a.btn-download:hover {
 a.btn-download-reverse {
   display: inline-block;
   padding: 10px 16px;
-  border-radius: 8px;
+  border-radius: 12px;
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: var(--btn-text);
+  /* background: var(--btn-text); */
+  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
   color: var(--btn-bg);
-  border: 2px solid var(--btn-bg);
+  border: none;
+
+  /* 2. The Bevel: Light border on top/left, subtle dark border on bottom/right */
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #d1d1d1;
+  border-right: 1px solid #d1d1d1;
+
+  /* 3. The Lift: Soft shadow offset to the bottom-right (away from light) */
+  box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 a.btn-download-reverse:hover {
   background: var(--btn-bg);
   color: var(--btn-text);
   border: 2px solid var(--btn-text);
+  /* Increase the lift slightly */
+  transform: translateY(-2px);
+  box-shadow: 8px 12px 25px rgba(0, 0, 0, 0.15);
   /*try throbbing button animation */
   animation: throb_button_rev 0.8s ease-in-out infinite !important;
   cursor: pointer;
@@ -163,6 +176,10 @@ a.btn-download-reverse:hover {
   100% { transform: scale(1); }
 }
 
+a.btn-download-reverse:active {
+  transform: translateY(1px);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
 /* a#facebookLink{color:#064e3b;text-decoration:underline;font-size:13px} */
 
 .layout{display:flex;min-height:calc(100vh - 64px)}
