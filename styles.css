@@ -189,7 +189,7 @@ a.btn-download-reverse {
   box-shadow: 6px 10px 20px color-mix(in srgb, var(--btn-text), black 40% 30%);
 }
 
-a.btn-download:hover {
+a.btn-download-reverse:hover {
   /* Reversed Colors */
   background: var(--btn-bg);
   color: var(--btn-text);
@@ -202,7 +202,7 @@ a.btn-download:hover {
   animation: throb-bg 1.5s infinite ease-in-out;
 }
 
-a.btn-download:active {
+a.btn-download-reverse:active {
   /* The "Pressed" effect */
   transform: scale(0.96) translateY(4px);
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
