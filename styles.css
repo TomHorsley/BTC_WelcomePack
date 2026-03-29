@@ -161,52 +161,58 @@ a.btn-download:active {
 }
 
 a.btn-download-reverse {
-  /* Essential for anchors to behave like buttons */
   display: inline-block;
   text-decoration: none;
-  
-  /* Layout & Typography */
   padding: 16px 32px;
   font-weight: 700;
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   
-  /* 3D Surface & Lighting (Top-Left) */
+  /* 1. Dark Surface: Use a tighter gradient. 
+     Too much white makes dark buttons look "dusty". */
   color: var(--btn-bg);
   background: linear-gradient(135deg, 
-    color-mix(in srgb, var(--btn-text), white 40%) 0%, 
+    color-mix(in srgb, var(--btn-text), white 15%) 0%, 
     var(--btn-text) 100%
   );
   
-  /* The Bevel (Highlights and Lowlights) */
-  border-top: 1px solid color-mix(in srgb, var(--btn-text), white 60%);
-  border-left: 1px solid color-mix(in srgb, var(--btn-text), white 60%);
-  border-bottom: 3px solid color-mix(in srgb, var(--btn-text), black 20%);
-  border-right: 2px solid color-mix(in srgb, var(--btn-text), black 20%);
+  /* 2. The Bevel: On dark buttons, "inner glows" look better than solid borders. */
+  /* Top-left light: subtle white with low opacity */
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  /* Bottom-right depth: almost black */
+  border-bottom: 3px solid #1a1a1a;
+  border-right: 2px solid #1a1a1a;
 
-  /* The Floating Shadow (Offset to bottom-right) */
-  box-shadow: 6px 10px 20px color-mix(in srgb, var(--btn-text), black 40% 30%);
+  /* 3. The Shadow: Since the button is dark, the shadow needs to be 
+     slightly heavier/sharper to be visible against the page. */
+  box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.2),
+    inset 1px 1px 0px rgba(255, 255, 255, 0.1); /* Subtle inner rim light */
 }
 
 a.btn-download-reverse:hover {
-  /* Reversed Colors */
+  /* Hover Flip back to Yellow */
   background: var(--btn-bg);
   color: var(--btn-text);
   
-  /* Adjusting borders and shadow for the dark state */
-  border-color: color-mix(in srgb, var(--btn-bg), white 10%);
-  box-shadow: 8px 15px 30px rgba(0, 0, 0, 0.3);
+  /* When it turns yellow, we switch back to the "Warm" bevel style */
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 3px solid color-mix(in srgb, var(--btn-bg), black 20%);
+  border-right: 2px solid color-mix(in srgb, var(--btn-bg), black 20%);
   
-  /* The Throb */
+  /* Glow effect: Use a yellow-tinted shadow on hover */
+  box-shadow: 0 15px 30px color-mix(in srgb, var(--btn-bg), transparent 60%);
+  
   animation: throb-bg 1.5s infinite ease-in-out;
 }
 
 a.btn-download-reverse:active {
-  /* The "Pressed" effect */
   transform: scale(0.96) translateY(4px);
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-  animation: none; /* Stop throbbing while clicking */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: none;
 }
 
 @keyframes throb-bg {
